@@ -1,0 +1,19 @@
+{
+  "name": "homeheating",
+  "version": "1.0.0",
+  "description": "floor heating controller",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "node-cron": "^2.0.3",
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
