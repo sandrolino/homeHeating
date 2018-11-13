@@ -1,0 +1,17 @@
+[Unit]
+Description=homeHeating
+After=network.target
+
+[Service]
+ExecStart=/home/ubuntu/homeHeating/script/runCron.sh
+Restart=always
+User=ubuntu
+# Use 'nogroup' group for Ubuntu/Debian
+# use 'nobody' group for Fedora
+Group=nogroup
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/home/ubuntu/homeHeating
+
+[Install]
+WantedBy=multi-user.target

@@ -32,7 +32,7 @@ const sendUpdate = async (req) => {
 }
 
 
-const withinSlot = (t) => getAction(t, 5.9, 7.1) 
+const withinSlot = (t) => getAction(t, 19.5, 20.5) || getAction(t, 5, 6) 
 
 const getHourDecimal = () => {
     let d = new Date
